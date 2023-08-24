@@ -7,6 +7,8 @@
 
     <title>CRUD PHP e SQL</title>
 
+    <link rel="stylesheet" href="./css/exemplo-crud-php.css">
+
 </head>
 
 <body>

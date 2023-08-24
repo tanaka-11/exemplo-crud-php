@@ -7,6 +7,7 @@
 
     <title>Fabricantes - Visualização</title>
 
+    <link rel="stylesheet" href="./css/exemplo-crud-php.css">
 
 </head>
 

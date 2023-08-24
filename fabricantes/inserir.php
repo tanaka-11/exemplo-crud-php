@@ -7,6 +7,8 @@
     
     <title>Fabricantes - Inserçãpo</title>
 
+    <link rel="stylesheet" href="./css/exemplo-crud-php.css">
+
 </head>
 
 <body>
