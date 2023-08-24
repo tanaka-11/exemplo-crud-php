@@ -1,13 +1,13 @@
 h1, h2 {text-align: center;}
 
-body {background-color: lightgrey;}
+body {background-color: #c4c3c3;}
 
 caption {
     font-size: 1.5rem;
 }
 
 table, th, td {
-    border: black solid 5px;
+    border: black solid 1px;
     border-collapse: collapse;
     
 }
@@ -21,7 +21,7 @@ table {
 th {
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 1.05rem;
     text-transform: uppercase;
     
 }
@@ -29,14 +29,11 @@ th {
 td {
     padding: 12px;
     font-size: 1.2rem;
-    font-weight: bold;
+    text-align: center;
 }
 
+tr:nth-child(even) {background-color: #92b4f5;}
 
-td:first-child,td:nth-child(2) { text-align: center;}
-
-/* Linhas (even) */
-tr:nth-child(even) {background-color: #6495ED;}
 tr:nth-child(even):hover {
     background-color: #4F5BD6;
     cursor: pointer;
