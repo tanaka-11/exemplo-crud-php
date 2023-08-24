@@ -23,6 +23,6 @@ try {
     );
 } catch(Exception $erro){
     // Exception = Classe/Tipo de dados voltado para tratamento de erros
-    die("Falha na conexão do servidor");
+    die("Falha na conexão do servidor: ".$erro->getMessage());
 }
 
