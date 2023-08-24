@@ -36,10 +36,21 @@ ul li a:hover {
     background-color: #2e89a5;
     border-radius: 8px;
     font-size: 2rem;
+    color: #cce7f8;
+}
+
+.container-index {
+    background-color: #dddee0;
+    width: 600px;
+    margin: 36px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: #000 1px 1px 11px;
 }
 
 
 /* Pagina de Fabricantes */
+
 p a {
     text-decoration: none;
     color: #000;
@@ -52,6 +63,7 @@ p a:hover {
     background-color: #2e89a5;
     border-radius: 8px;
     font-size: 2rem;
+    color: #cce7f8;
 }
 
 

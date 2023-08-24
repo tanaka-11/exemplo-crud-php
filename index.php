@@ -16,20 +16,19 @@
     <h1>----- Sistema de Vendas -----</h1>
     <hr>
 
+<div class="container-index">
     <h2>Escolha o que deseja gerenciar:</h2>
 
     <div class="text-center">
     <p>Operações de <b>inserção</b>, <b>leitura</b>, <b>atualização</b>, e <b>exclusão</b> de dados.</p>
     </div>
-    <hr>
-
-    <div class="button-index">
+    
     <ul>
         <li><a href="./fabricantes/visualizar.php">Fabricantes</a></li>
         <li><a href="">Produtos</a></li>
     </ul>
-    </div>
 
+</div>
 </body>
 
 </html>
