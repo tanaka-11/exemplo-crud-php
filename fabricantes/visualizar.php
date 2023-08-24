@@ -22,8 +22,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
 <body>
     <h1>Fabricantes | SELECT</h1>
     <hr>
-    <h2>Lendo e carregando todos os fabricantes.</h2>
-
+   
     <div class="center">
     <a href="../index.php">Cadastre novo fabricante</a>
     </div>
