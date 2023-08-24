@@ -24,7 +24,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
     <hr>
    
     <div class="center">
-    <a href="../index.php">Cadastre novo fabricante</a>
+    <p><a href="#">Cadastre novo fabricante</a></p>
     </div>
     
     <thead>
@@ -53,7 +53,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
     </table>    
     
     <div class="center">
-    <a href="../index.php">Voltar</a>
+    <p><a href="../index.php">Voltar</a></p>
     </div>
 
 </body>
