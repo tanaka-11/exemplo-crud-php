@@ -51,5 +51,15 @@ tr:nth-child(odd):hover {
 
 div {
     font-size: 1.2rem;
-    margin: 2rem;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+.center a {
+    text-align: center;
+  }
