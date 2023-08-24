@@ -24,13 +24,13 @@ $listaDeFabricantes = lerFabricantes($conexao);
     <hr>
     <h2>Lendo e carregando todos os fabricantes.</h2>
 
-    <div style="text-align: center;" class="center">
+    <div style="text-align: center;">
     <a href="../index.php">Cadastre novo fabricante</a>
     </div>
     
 
     <table>
-        <caption>Lista de Fabricantes</caption>
+        <caption><b>Lista de Fabricantes</b></caption>
         <thead>
         <tr>
             <th>ID</th>
