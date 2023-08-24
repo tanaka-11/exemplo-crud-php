@@ -28,7 +28,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
     <a href="../index.php">Cadastre novo fabricante</a>
     </div>
     
-
+    <thead>
     <table>
         <caption><b>Lista de Fabricantes</b></caption>
         <thead>
@@ -37,7 +37,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
             <th>Nome do Fabricante</th>
             <th>Operações</th>
         </tr>
-        </thead>
+    </thead>
 
 <?php foreach($listaDeFabricantes as $listaDeFabricante) {  ?>
     
