@@ -7,14 +7,20 @@ function lerFabricantes(PDO $conexao){
     // 1º Escrevendo o comando SQL.
     $sql = "SELECT * FROM fabricantes ORDER BY nomeFabricante";
 
-    // 2º Preparando o comando SQL com o prepare() guardando-o numa variavel.
-    $consulta = $conexao->prepare($sql); 
+    try {
+        // 2º Preparando o comando SQL com o prepare() guardando-o numa variavel.
+        $consulta = $conexao->prepare($sql); 
 
-    // 3º Executando o comando SQL no banco de dados.
-    $consulta->execute();
+        // 3º Executando o comando SQL no banco de dados.
+        $consulta->execute();
 
-    // 4º Retornando resultados com o método fetchAll() onde ele vai buscar todos os dados da consulta como um array associativo.
-    $resultado = $consulta->fetchALL(PDO::FETCH_ASSOC);
+        // 4º Retornando resultados com o método fetchAll() onde ele vai buscar todos os dados da consulta como um array associativo.
+        $resultado = $consulta->fetchALL(PDO::FETCH_ASSOC);
+        
+    } catch(Exception $erro) {
+        die("Falha na conexão do servidor: ".$erro->getMessage());
+    }
+    
     return $resultado;
 }
 
