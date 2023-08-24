@@ -7,7 +7,7 @@ $usuario = "root";
 $senha = "";
 $banco = "vendas";
 
-/* Configurações de conexão API/Driver utilizando PDO (PHP Data Object)*/
+/* Configurações de conexão API/Driver utilizando o tipo de dado PDO (PHP Data Object)*/
 
 try {
     // Instância/Objeto PDO para conexão
