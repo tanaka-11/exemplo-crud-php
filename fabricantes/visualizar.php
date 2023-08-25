@@ -50,6 +50,7 @@ $quantidade = count($listaDeFabricantes);
     <td><?=$listaDeFabricante['nomeFabricante']?></td>
     <td>
         <a href="atualizar.php?id=<?=$listaDeFabricante['id']?>">Editar</a>
+
         <a href="#">Excluir</a>
     </td>
     </tr>
