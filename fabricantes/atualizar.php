@@ -5,6 +5,14 @@ $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
 $dadosDoFabricante = lerUmFabricante($conexao, $id);
 
+if(isset($_POST['atualizar'])){
+    $nomeFabricante = filter_input(INPUT_POST, "nomeFabricante", FILTER_SANITIZE_SPECIAL_CHARS);
+    
+    // Passar o id senão ira mudar todos.
+    atualizarFabricante($conexao, $nomeFabricante, $id);
+
+    header("location:visualizar.php");
+}
 ?>
 
 <!DOCTYPE html>

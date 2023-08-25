@@ -45,7 +45,7 @@ function inserirFabricantes(PDO $conexao, string $nomeFabricante){
     }
 }
 
-// Função para atualizar dados de fabricantes na página atualizar.php
+// Função para ler(SELECT) dados de fabricantes na página atualizar.php
 function lerUmFabricante(PDO $conexao, INT $idFabricante){
     $sql = "SELECT * FROM fabricantes WHERE id = :id";
     try {
@@ -54,7 +54,22 @@ function lerUmFabricante(PDO $conexao, INT $idFabricante){
         $consulta -> execute();
         $resultado = $consulta -> fetch(PDO::FETCH_ASSOC);
     } catch (Exception $erro) {
-        die("Erro ao atualizar fabricante. Tente Novamente".$erro->getMessage());
+        die("Erro ao visualizar dados do fabricante. Tente Novamente".$erro->getMessage());
     }
     return $resultado;
+}
+
+// Função para atualizar(UPDATE) dados de fabricantes na página atualizar.php
+function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabricante){
+    $sql = "UPDATE fabricantes SET nomeFabricante = :nomeFabricante WHERE id = :id";
+    try {
+        $consulta = $conexao -> prepare($sql);
+        $consulta->bindValue(":nomeFabricante", $nomeFabricante, PDO::PARAM_STR);
+        $consulta -> bindValue(":id", $idFabricante, PDO::PARAM_INT);
+        $consulta -> execute();
+        
+    } catch (Exception $erro) {
+        die("Erro ao atualizar dados do fabricante. Tente Novamente".$erro->getMessage());
+    }
+    
 }
