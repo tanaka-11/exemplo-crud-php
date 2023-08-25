@@ -24,7 +24,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
     <hr>
    
     <div class="center">
-    <p><a href="#">Cadastre novo fabricante</a></p>
+    <p><a href="inserir.php">Cadastre novo fabricante</a></p>
     </div>
     
     <thead>
