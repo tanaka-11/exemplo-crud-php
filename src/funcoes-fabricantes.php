@@ -52,7 +52,9 @@ function lerUmFabricante(PDO $conexao, INT $idFabricante){
         $consulta = $conexao -> prepare($sql);
         $consulta -> bindValue(":id", $idFabricante, PDO::PARAM_INT);
         $consulta -> execute();
+        $resultado = $consulta -> fetch(PDO::FETCH_ASSOC);
     } catch (Exception $erro) {
         die("Erro ao atualizar fabricante. Tente Novamente".$erro->getMessage());
     }
+    return $resultado;
 }
