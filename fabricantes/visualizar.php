@@ -4,6 +4,9 @@ require_once "../src/funcoes-fabricantes.php";
 
 // Guardando o retorno dentro de uma variavel da função lerFabricantes.
 $listaDeFabricantes = lerFabricantes($conexao);
+
+// Contando quantos fabricantes tem no total
+$quantidade = count($listaDeFabricantes);
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +30,11 @@ $listaDeFabricantes = lerFabricantes($conexao);
     <p><a href="inserir.php">Cadastre novo fabricante</a></p>
     </div>
     
-    <thead>
+    
     <table>
-        <caption><b>Lista de Fabricantes</b></caption>
-        <thead>
+        <caption>
+            <b>Lista de Fabricantes: <b><?=$quantidade?></b> </b></caption>
+    <thead>
         <tr>
             <th>ID</th>
             <th>Nome do Fabricante</th>

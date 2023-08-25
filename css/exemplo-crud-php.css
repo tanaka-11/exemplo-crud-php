@@ -147,9 +147,10 @@ div .center-inserir {
 
 form {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
     padding: 1.25rem;
     background-color: #dddee0;
+    box-shadow: #000 1px 1px 11px;
     border-radius: 8px;
 }
 
