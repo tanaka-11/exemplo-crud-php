@@ -33,7 +33,8 @@ $quantidade = count($listaDeFabricantes);
     
     <table>
         <caption>
-            <b>Lista de Fabricantes: <b><?=$quantidade?></b> </b></caption>
+            <b>Lista de Fabricantes</b>
+        </caption>
     <thead>
         <tr>
             <th>ID</th>
