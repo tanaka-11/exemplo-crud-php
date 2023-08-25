@@ -1,6 +1,16 @@
 <?php
 if(isset ($_POST['inserir']) ){
+    // Conectando a função.
+    require_once "../src/funcoes-fabricantes.php";
+
+    // Sanitizando e guardando os dados na variavel.
     $nomeFabricante = filter_input(INPUT_POST, "nomeFabricante", FILTER_SANITIZE_SPECIAL_CHARS);
+
+    // Chamando a função passando os dados de conexão e o dado (Nome do Fabricante) escrito no formulario.
+    inserirFabricantes($conexao, $nomeFabricante);
+
+    // Redirecionando
+    header("location:visualizar.php");
 }
 ?>
 
@@ -22,7 +32,7 @@ if(isset ($_POST['inserir']) ){
     <h1>Fabricantes | INSERT</h1>
     <hr>
 
-    <div>
+    <div class="center-inserir">
     <form action="#" method="post">
         <p>
             <label for="nomeFabricante">Nome do Fabricante:</label>

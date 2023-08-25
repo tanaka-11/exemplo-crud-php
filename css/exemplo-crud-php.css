@@ -138,27 +138,33 @@ tr:nth-child(odd):hover {
   }
 
 /* Página de adicionar fabricantes */
+div .center-inserir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 form {
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding: 1.25rem;
+    background-color: #dddee0;
+    border-radius: 8px;
 }
 
 label {
     font-size: 1.2rem;
-    color: white;
-    text-shadow: #2D3945 2px 2px 5px;
+    color: #000;
 }
 
 
- textarea {
-    border: none;
+label, input {
     padding: 8px;
-    width: 100%;
-    box-shadow:#2D3945 2px 2px 10px;
+    width: 99%;
     height: 40px;
     font-size: 1.2rem;
-    background-color: lightgrey;
+
 }
 
 button {
@@ -168,7 +174,7 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 8px;
-    width: 50%;
+    width: 100%;
     margin: auto;
 
 }

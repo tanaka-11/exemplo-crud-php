@@ -22,8 +22,25 @@ function lerFabricantes(PDO $conexao){
     }
     
     return $resultado;
-}
+} 
+// FIM lerFabricantes !
 
-// Teste
-// var_dump($dados);
-// $dados = lerFabricantes($conexao);
+
+
+// Função para adicionar fabricantes na página inserir.php
+function inserirFabricantes(PDO $conexao, string $nomeFabricante){
+    $sql = "INSERT INTO fabricantes(nomeFabricante) VALUES(:nome)";
+    // VALUES(:qlqrcoisa) -> Indica um "named parameter" (Parâmetro nomeado)
+
+    try {
+        $consulta = $conexao -> prepare($sql);
+        
+        // bindValue -> Vincular valor no named parameter (:nomeFabricante), passando onde está o valor ($nomeFabricante) e seu tipo de dado (PDO::PARAM_STR) guardando tudo na variavel ($consulta).
+        $consulta -> bindValue(":nome", $nomeFabricante, PDO::PARAM_STR);
+
+        $consulta -> execute();
+
+    } catch (Exception $erro) {
+        die("Erro ao adicionar fabricante. Tente Novamente".$erro->getMessage());
+    }
+}
