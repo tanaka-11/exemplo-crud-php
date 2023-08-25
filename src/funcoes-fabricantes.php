@@ -23,7 +23,7 @@ function lerFabricantes(PDO $conexao){
     
     return $resultado;
 } 
-// FIM lerFabricantes !
+
 
 
 
@@ -42,5 +42,17 @@ function inserirFabricantes(PDO $conexao, string $nomeFabricante){
 
     } catch (Exception $erro) {
         die("Erro ao adicionar fabricante. Tente Novamente".$erro->getMessage());
+    }
+}
+
+// Função para atualizar dados de fabricantes na página atualizar.php
+function lerUmFabricante(PDO $conexao, INT $idFabricante){
+    $sql = "SELECT * FROM fabricantes WHERE id = :id";
+    try {
+        $consulta = $conexao -> prepare($sql);
+        $consulta -> bindValue(":id", $idFabricante, PDO::PARAM_INT);
+        $consulta -> execute();
+    } catch (Exception $erro) {
+        die("Erro ao atualizar fabricante. Tente Novamente".$erro->getMessage());
     }
 }
