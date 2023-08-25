@@ -41,7 +41,7 @@ ul li a:hover {
 
 .container-index {
     background-color: #dddee0;
-    width: 760px;
+    max-width: 760px;
     margin: 36px auto;
     padding: 10px;
     border-radius: 8px;
