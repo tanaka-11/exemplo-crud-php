@@ -45,7 +45,7 @@ if(isset ($_POST['inserir']) ){
     </form>
     </div>
 
-    <p class="center"><a href="../index.php">Voltar</a></p>
+    <p class="center"><a href="./visualizar.php">Voltar</a></p>
 </body>
 
 </html>
