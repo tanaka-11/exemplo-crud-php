@@ -1,6 +1,9 @@
 <?php
-// Sanitizando e guardando o valor do link dinamico (Parâmetro na url).
+require_once "../src/funcoes-fabricantes.php";
+
 $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+
+$dadosDoFabricante = lerUmFabricante($conexao, $id);
 
 ?>
 
@@ -23,10 +26,12 @@ $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
     <div class="center-inserir">
     <form action="#" method="post">
+        <input type="hidden" name="id" value="<?=$dadosDoFabricante['id']?>">
+
         <p>
             <label for="nomeFabricante">Nome do Fabricante:</label>
             <br>
-            <input type="text" name="nomeFabricante" id="nomeFabricante" required>
+            <input value="<?=$dadosDoFabricante['nomeFabricante']?>" type="text" name="nomeFabricante" id="nomeFabricante" required>
         </p>
 
     <button type="submit" name="atualizar">Atualizar Fabricante</button>
