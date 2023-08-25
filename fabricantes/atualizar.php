@@ -1,5 +1,8 @@
+<?php
+// Sanitizando e guardando o valor do link dinamico (Parâmetro na url).
+$id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
-
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
