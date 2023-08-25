@@ -9,7 +9,13 @@ h2 {
 
 h1, h2 {text-align: center;}
 
-body {background-color: #b9bfce}
+body {
+    background-color: #b9bfce;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+p {font-size: 1.8rem;}
 
 .text-center {text-align: center;}
 
@@ -28,20 +34,20 @@ ul li a {
     text-decoration: none;
     color: #000;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     transition: font-size 0.3s ease;
 }
 
 ul li a:hover {
     background-color: #2e89a5;
     border-radius: 8px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #cce7f8;
 }
 
 .container-index {
     background-color: #dddee0;
-    max-width: 760px;
+    max-width: 1000px;
     margin: 36px auto;
     padding: 10px;
     border-radius: 8px;
@@ -68,22 +74,21 @@ p a:hover {
 
 
 caption {
-    font-size: 1.2rem;
-    margin-bottom: 13px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     text-transform: uppercase;
-    text-shadow: #fff 0 0 1.8px;
 }
 
 table, th, td {
     border: black solid 1px;
     border-collapse: collapse;
-    
 }
 
 table {
-    margin: auto;
+    margin: 20px auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 960px;
+    box-shadow: #000 1px 1px 11px;
 }
 
 th {
@@ -95,8 +100,8 @@ th {
 }
 
 td {
-    padding: 12px;
-    font-size: 1.2rem;
+    padding: 15px;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -116,13 +121,10 @@ tr:nth-child(odd) {
     
 }
 tr:nth-child(odd):hover {
-    background-color: #cdd1e0;
+    background-color: #979aa4;
     cursor: pointer;
 }
 
-div {
-    font-size: 1.2rem;
-}
 
 .center {
     display: flex;
