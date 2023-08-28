@@ -7,7 +7,7 @@ $dadosDoFabricante = lerUmFabricante($conexao, $id);
 
 if(isset($_POST['deletar'])){
     deletarFabricante($conexao, $id);
-    header("location:visualizar.php");
+    header("location:visualizar.php?status=sucesso");
 }
 ?>
 
@@ -43,6 +43,7 @@ if(isset($_POST['deletar'])){
     </div>
 
     <p class="center"><a href="./visualizar.php">Voltar</a></p>
+
 </body>
 
 </html>

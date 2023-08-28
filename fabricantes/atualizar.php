@@ -11,7 +11,7 @@ if(isset($_POST['atualizar'])){
     // Passar o id senão ira mudar todos.
     atualizarFabricante($conexao, $nomeFabricante, $id);
 
-    header("location:visualizar.php");
+    header("location:visualizar.php?status=sucesso");
 }
 ?>
 

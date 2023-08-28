@@ -74,7 +74,7 @@ function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabric
     
 }
 
-// Função para deletar(DELETE) dados de fabricante na pagina deleta.php
+// Função para deletar(DELETE) dados de fabricante na pagina deletar.php
 function deletarFabricante(PDO $conexao, INT $idFabricante){
     $sql = "DELETE FROM fabricantes WHERE id = :id";
     try {
