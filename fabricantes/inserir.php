@@ -10,7 +10,7 @@ if(isset ($_POST['inserir']) ){
     inserirFabricantes($conexao, $nomeFabricante);
 
     // Redirecionando
-    header("location:visualizar.php");
+    header("location:visualizar.php?status=sucesso");
 }
 ?>
 

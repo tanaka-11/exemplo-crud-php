@@ -7,9 +7,8 @@ $dadosDoFabricante = lerUmFabricante($conexao, $id);
 
 if(isset($_POST['deletar'])){
     deletarFabricante($conexao, $id);
-    header("location:visualizar.php");
-}
-?>
+    header("location:visualizar.php?status=sucesso");
+ } ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
