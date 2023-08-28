@@ -73,3 +73,15 @@ function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabric
     }
     
 }
+
+// Função para deletar(DELETE) dados de fabricante na pagina deleta.php
+function deletarFabricante(PDO $conexao, INT $idFabricante){
+    $sql = "DELETE FROM fabricantes WHERE id = :id";
+    try {
+        $consulta = $conexao -> prepare($sql);
+        $consulta -> bindValue(":id", $idFabricante, PDO::PARAM_INT);
+        $consulta -> execute();
+    } catch (Exception $erro) {
+        die("Erro ao deletar dados do fabricante. Tente Novamente".$erro->getMessage());
+    }
+}

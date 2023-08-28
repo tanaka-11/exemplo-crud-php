@@ -30,7 +30,6 @@ $quantidade = count($listaDeFabricantes);
     <p><a href="inserir.php">Cadastre novo fabricante</a></p>
     </div>
     
-<div class="detail-visualizar">
     <table>
         <caption>
             <b>Lista de Fabricantes</b>
@@ -42,7 +41,7 @@ $quantidade = count($listaDeFabricantes);
             <th>Operações</th>
         </tr>
     </thead>
-</div>
+
 <?php foreach($listaDeFabricantes as $listaDeFabricante) {  ?>
     
     <tr>
@@ -51,7 +50,7 @@ $quantidade = count($listaDeFabricantes);
     <td>
         <a href="atualizar.php?id=<?=$listaDeFabricante['id']?>">Editar</a>
 
-        <a href="#">Excluir</a>
+        <a href="deletar.php?id=<?=$listaDeFabricante['id']?>">Excluir</a>
     </td>
     </tr>
 
