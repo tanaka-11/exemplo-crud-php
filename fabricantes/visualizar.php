@@ -30,7 +30,7 @@ $quantidade = count($listaDeFabricantes);
     <p><a href="inserir.php">Cadastre novo fabricante</a></p>
     </div>
     
-    
+<div class="detail-visualizar">
     <table>
         <caption>
             <b>Lista de Fabricantes</b>
@@ -42,7 +42,7 @@ $quantidade = count($listaDeFabricantes);
             <th>Operações</th>
         </tr>
     </thead>
-
+</div>
 <?php foreach($listaDeFabricantes as $listaDeFabricante) {  ?>
     
     <tr>

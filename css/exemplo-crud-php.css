@@ -114,7 +114,6 @@ tr:nth-child(even):hover {
     cursor: pointer;
 }
 
-/* Linhas (odd) */
 tr:nth-child(odd) {
     background-color: 
     #fff;
@@ -124,7 +123,6 @@ tr:nth-child(odd):hover {
     background-color: #979aa4;
     cursor: pointer;
 }
-
 
 .center {
     display: flex;
@@ -137,7 +135,7 @@ tr:nth-child(odd):hover {
     text-align: center;
   }
 
-/* Página de adicionar fabricantes */
+/* Página de adicionar/atualizar fabricantes */
 div .center-inserir {
     display: flex;
     justify-content: center;
@@ -164,6 +162,7 @@ label {
     padding: 8px;
     width: 98%;
     height: 40px;
+    font-size: 1.1rem;
 
 }
 
