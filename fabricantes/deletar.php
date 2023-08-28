@@ -25,7 +25,9 @@ if(isset($_POST['deletar'])){
 
 <body>
     <h1>Fabricantes | DELETE</h1>
+ <hr>
 
+    <h2>Tem certeza que deseja excluir o fabricante abaixo?</h2>
     <div class="center-inserir">
     <form action="#" method="post">
         <input type="hidden" name="id" value="<?=$dadosDoFabricante['id']?>">
@@ -33,7 +35,7 @@ if(isset($_POST['deletar'])){
         <p>
             <label for="nomeFabricante">Nome do Fabricante:</label>
             <br>
-            <input value="<?=$dadosDoFabricante['nomeFabricante']?>" type="text" name="nomeFabricante" id="nomeFabricante" required>
+            <input value="<?=$dadosDoFabricante['nomeFabricante']?>" type="text" name="nomeFabricante" id="nomeFabricante" disabled>
         </p>
 
     <button type="submit" name="deletar">Deletar Fabricante</button>
