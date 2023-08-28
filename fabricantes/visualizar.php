@@ -55,7 +55,7 @@ $quantidade = count($listaDeFabricantes);
     <td>
         <a href="atualizar.php?id=<?=$listaDeFabricante['id']?>">Editar</a>
 
-        <a href="deletar.php?id=<?=$listaDeFabricante['id']?>">Excluir</a>
+        <a class="excluir" href="deletar.php?id=<?=$listaDeFabricante['id']?>">Excluir</a>
     </td>
     </tr>
 
@@ -66,5 +66,6 @@ $quantidade = count($listaDeFabricantes);
     <p><a href="../index.php">Voltar</a></p>
     </div>
 
+    <script src="../js/confirma-exclusao.js"></script>
 </body>
 </html>
