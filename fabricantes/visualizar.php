@@ -32,7 +32,7 @@ $quantidade = count($listaDeFabricantes);
 
 <!-- Feedback para o usuário indicando que o processo deu certo -->
 <?php if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
-    <h3>Fabricante atualizado com sucesso!</h3>
+    <h3 class="center style-sucesso">Fabricante atualizado com sucesso!</h3>
 <?php } ?>
 
     <table>
