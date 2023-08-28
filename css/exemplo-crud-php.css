@@ -1,7 +1,21 @@
 /* Regras Gerais */
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* Pagina Index */
+.mensagem{
+    color: #ffffff;
+    background: #12295885;
+    border-radius: 12px;
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+}
+
+
 h1 {
     font-size: 2.5rem;
 }
@@ -11,9 +25,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
-    color: #1081A3;
+    font-size: 1.3rem;
 }
+
 
 h1, h2 {text-align: center;}
 
@@ -137,11 +151,12 @@ tr:nth-child(odd):hover {
     justify-content: center;
     align-items: center;
     height: 100px;
-  }
+    text-align: center;
+}
   
 .center a {
     text-align: center;
-  }
+}
 
 /* Página de adicionar/atualizar fabricantes */
 div .center-inserir {
@@ -166,7 +181,7 @@ label {
 }
 
 
- input {
+input {
     padding: 8px;
     width: 98%;
     height: 40px;
@@ -176,14 +191,14 @@ label {
 
 button {
     border: none;
-    font-size: 1.5rem;
-    padding: 1rem;
+    padding: 10px;
+    font-size: 1.2rem;
     background-color: #1081A3;
     color: white;
     font-weight: bold;
     border-radius: 8px;
-    width: 100%;
-    margin: auto;
+    width: 98%;
+    margin: 10px auto;
 
 }
 button:hover, button:focus {
@@ -194,6 +209,7 @@ button:hover, button:focus {
 
 /* Pagina produtos */
 .produtos {
+    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -202,12 +218,16 @@ button:hover, button:focus {
     margin: auto;
 }
 
+.produto p {font-size: 1.2rem;}
+
 .produto {
-    color: #fff;
-    text-shadow: #979aa4 1px 1px 1px;
-    background-color: #4098B3;
+    color: #11347a;
+    font-size: 16px;
+    text-shadow: #122958 1px 1px 1.6px;
+    background-color: #becce9;
     padding: 1.02rem;
     width: 48%;
-    box-shadow: #000 1px 1px 8px;
+    box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
+    text-transform: uppercase;
 }
