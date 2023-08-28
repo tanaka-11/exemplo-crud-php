@@ -30,7 +30,6 @@ if(isset ($_POST['inserir']) ){
 
 <body>
     <h1>Fabricantes | INSERT</h1>
-    <hr>
 
     <div class="center-inserir">
     <form action="#" method="post">

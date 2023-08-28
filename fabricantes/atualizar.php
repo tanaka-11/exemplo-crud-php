@@ -30,7 +30,6 @@ if(isset($_POST['atualizar'])){
 
 <body>
     <h1>Fabricantes | UPDATE-SELECT</h1>
-    <hr>
 
     <div class="center-inserir">
     <form action="#" method="post">
