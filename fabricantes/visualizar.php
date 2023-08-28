@@ -44,11 +44,13 @@ $quantidade = count($listaDeFabricantes);
     </div>
 
 <!-- Feedback para o usuário indicando que o processo deu certo -->
-<div id="mensagem" class="mensagem">
+
 <?php 
 if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
-    <h3 id="mensagem" class="center style-sucesso">A tabela de fabricantes foi modificada com sucesso!</h3>
+    <div id="mensagem" class="mensagem-fabricante">
+    <h3 id="mensagem" class="center">A tabela de fabricantes foi modificada com sucesso!</h3>
     <button id="botao" onclick="esconderMensagem()">Clique aqui para voltar.</button>
+    </div>
 <?php } ?>
 </div>
 

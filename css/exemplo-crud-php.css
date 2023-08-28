@@ -6,7 +6,9 @@
 }
 
 /* Pagina Index */
-.mensagem{
+
+/* Mensagem de sucesso */
+.mensagem-fabricante {
     color: #ffffff;
     background: #12295885;
     border-radius: 12px;
@@ -14,7 +16,6 @@
     padding: 2rem;
     margin: auto;
 }
-
 
 h1 {
     font-size: 2.5rem;
