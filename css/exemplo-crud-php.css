@@ -210,7 +210,6 @@ button:hover, button:focus {
 
 /* Pagina produtos */
 .produtos {
-    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -222,10 +221,10 @@ button:hover, button:focus {
 .produto p {font-size: 1.2rem;}
 
 .produto {
-    color: #11347a;
+    color: #fff ;
     font-size: 16px;
-    text-shadow: #122958 1px 1px 1.6px;
-    background-color: #becce9;
+    text-shadow: #11347a 1px 1px 1.6px;
+    background-color: #627091;
     padding: 1.02rem;
     width: 48%;
     box-shadow: #000 1px 1px 4px;
