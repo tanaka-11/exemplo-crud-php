@@ -24,22 +24,18 @@ $listaDeProdutos = lerProdutos($conexao);
     </div>
 
     <div class="produtos">
-    
+<?php foreach($listaDeProdutos as $produto){?>
     <article class="produto">
-        <p><b>Nome do Produto:</b>...</p>
-        <p><b>Preço:</b>...</p>
-        <p><b>Estoque:</b>...</p>   
+        <p><b>Nome do Produto: </b><?=$produto['nomeProduto']?></p>
+        <p><b>Preço: R$</b><?=$produto['preco']?></p>
+        <p><b>Estoque: </b><?=$produto['estoque']?></p>   
     </article>
-
-    <article class="produto">
-        <p><b>Nome do Produto:</b>...</p>
-        <p><b>Preço:</b>...</p>
-        <p><b>Estoque:</b>...</p>   
-    </article>
-    </div>
+<?php } ?>
+    </div>   
 
     <div class="center">
     <p><a href="../index.php">Voltar</a></p>
     </div>
+
 </body>
 </html>
