@@ -2,7 +2,15 @@
 require_once "conecta.php";
 
 function lerProdutos(PDO $conexao):array {
-    $sql = "SELECT nomeProduto, preco, estoque FROM produtos ORDER BY id";
+    $sql = "SELECT 
+    produtos.id, 
+    produtos.nomeProduto,
+    produtos.preco,
+    produtos.estoque,
+    fabricantes.nomeFabricante
+    FROM produtos INNER JOIN fabricantes
+    ON produtos.fabricante_id = fabricantes.id 
+    ORDER BY id";
 
     try {
         $consulta = $conexao -> prepare($sql);
