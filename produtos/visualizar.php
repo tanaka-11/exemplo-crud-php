@@ -1,3 +1,9 @@
+<?php
+require_once "../src/funcoes-produtos.php";
+$listaDeProdutos = lerProdutos($conexao);
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,13 +28,13 @@
     <article class="produto">
         <p><b>Nome do Produto:</b>...</p>
         <p><b>Preço:</b>...</p>
-        <p><b>Quantidade:</b>...</p>   
+        <p><b>Estoque:</b>...</p>   
     </article>
 
     <article class="produto">
         <p><b>Nome do Produto:</b>...</p>
         <p><b>Preço:</b>...</p>
-        <p><b>Quantidade:</b>...</p>   
+        <p><b>Estoque:</b>...</p>   
     </article>
     </div>
 
