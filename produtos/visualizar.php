@@ -29,6 +29,7 @@ $listaDeProdutos = lerProdutos($conexao);
 <?php foreach($listaDeProdutos as $produto){?>
     <article class="produto">
         <p><b>Nome do Produto: </b><?=$produto['nomeProduto']?></p>
+        <p><b>Fabricante:</b> <?=$produto['nomeFabricante']?></p>
         <p><b>Preço: </b><?=formatarPreco($produto['preco'])?></p>
         <p><b>Estoque: </b><?=$produto['estoque']?></p>   
     </article>

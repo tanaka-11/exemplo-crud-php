@@ -10,7 +10,7 @@ function lerProdutos(PDO $conexao):array {
     fabricantes.nomeFabricante
     FROM produtos INNER JOIN fabricantes
     ON produtos.fabricante_id = fabricantes.id 
-    ORDER BY id";
+    ORDER BY nomeProduto";
 
     try {
         $consulta = $conexao -> prepare($sql);
