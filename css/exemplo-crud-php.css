@@ -217,7 +217,6 @@ button:hover, button:focus {
     margin: auto;
 }
 
-.produto p {font-size: 1.2rem;}
 
 .produto {
     color: #242526;
@@ -237,8 +236,14 @@ button:hover, button:focus {
     color: #fff;
 }
 
+.produto p {
+    font-size: 1.2rem;
+    transition: font-size 0.3s ease;
+}
+
 .produto p:hover{
     color: #fff;
     text-shadow: #11347a 3px 3px 5px;
     cursor: pointer;
+    font-size: 1.3rem;
 }
