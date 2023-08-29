@@ -52,7 +52,7 @@ if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
     <button id="botao" onclick="esconderMensagem()">Clique aqui para voltar.</button>
     </div>
 <?php } ?>
-</div>
+
 
     <table>
         <caption>
