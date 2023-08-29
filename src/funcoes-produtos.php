@@ -7,7 +7,9 @@ function lerProdutos(PDO $conexao):array {
     produtos.nomeProduto,
     produtos.preco,
     produtos.estoque,
-    fabricantes.nomeFabricante
+    fabricantes.nomeFabricante,
+    -- Adicionado diretamente na função a multiplicação entre eles para aparecer o total.
+    (produtos.preco * produtos.estoque) as total
     FROM produtos INNER JOIN fabricantes
     ON produtos.fabricante_id = fabricantes.id 
     ORDER BY nomeProduto";
@@ -21,3 +23,4 @@ function lerProdutos(PDO $conexao):array {
     }
     return $resultado;
 }
+
