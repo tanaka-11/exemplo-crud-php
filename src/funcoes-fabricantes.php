@@ -3,7 +3,7 @@
 require_once "conecta.php";
 
 // Função para o SELECT na página visualizar.php
-function lerFabricantes(PDO $conexao){
+function lerFabricantes(PDO $conexao):array {
     // 1º Escrevendo o comando SQL.
     $sql = "SELECT * FROM fabricantes ORDER BY nomeFabricante";
 
@@ -28,7 +28,7 @@ function lerFabricantes(PDO $conexao){
 
 
 // Função para adicionar fabricantes na página inserir.php
-function inserirFabricantes(PDO $conexao, string $nomeFabricante){
+function inserirFabricantes(PDO $conexao, string $nomeFabricante):void {
     $sql = "INSERT INTO fabricantes(nomeFabricante) VALUES(:nome)";
     // VALUES(:qlqrcoisa) -> Indica um "named parameter" (Parâmetro nomeado)
 
@@ -46,7 +46,7 @@ function inserirFabricantes(PDO $conexao, string $nomeFabricante){
 }
 
 // Função para ler(SELECT) dados de fabricantes na página atualizar.php
-function lerUmFabricante(PDO $conexao, INT $idFabricante){
+function lerUmFabricante(PDO $conexao, INT $idFabricante):array {
     $sql = "SELECT * FROM fabricantes WHERE id = :id";
     try {
         $consulta = $conexao -> prepare($sql);
@@ -60,7 +60,7 @@ function lerUmFabricante(PDO $conexao, INT $idFabricante){
 }
 
 // Função para atualizar(UPDATE) dados de fabricantes na página atualizar.php
-function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabricante){
+function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabricante):void {
     $sql = "UPDATE fabricantes SET nomeFabricante = :nomeFabricante WHERE id = :id";
     try {
         $consulta = $conexao -> prepare($sql);
@@ -75,7 +75,7 @@ function atualizarFabricante(PDO $conexao, string $nomeFabricante, INT $idFabric
 }
 
 // Função para deletar(DELETE) dados de fabricante na pagina deletar.php
-function deletarFabricante(PDO $conexao, INT $idFabricante){
+function deletarFabricante(PDO $conexao, INT $idFabricante):void {
     $sql = "DELETE FROM fabricantes WHERE id = :id";
     try {
         $consulta = $conexao -> prepare($sql);
