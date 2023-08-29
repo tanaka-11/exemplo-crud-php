@@ -1,5 +1,5 @@
 <?php
-function formatarPreco($preco):string {
-    $formatar = number_format($preco, 2, ",", ".");
-    return $formatar;
+function formatarPreco(float $valor):string {
+    $formatacao = number_format($valor, 2, ",", ".");
+    return $formatacao;
 }

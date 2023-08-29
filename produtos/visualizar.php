@@ -1,5 +1,7 @@
 <?php
 require_once "../src/funcoes-produtos.php";
+require_once "../src/funcoes-utilitarias.php";
+
 $listaDeProdutos = lerProdutos($conexao);
 
 ?>
