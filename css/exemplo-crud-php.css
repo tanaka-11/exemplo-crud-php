@@ -224,7 +224,7 @@ button:hover, button:focus {
     color: #fff ;
     font-size: 16px;
     font-weight: 500;
-    text-shadow: #11347a 1px 1px 2px;
+    text-shadow: #11347a 1px 3px 5px;
     background-color: #627091;
     padding: 1.02rem;
     width: 48%;
