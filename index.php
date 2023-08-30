@@ -13,7 +13,7 @@
 
 <body>
     <!-- Utilizando CRUD em PHP e SQL para montar um sistema de vendas -->
-    <h1>-- Sistema de Vendas --</h1>
+    <h1 class="titulo-index">-- Sistema de Vendas --</h1>
 
 <div class="container-index">
     <h2>Escolha o que deseja gerenciar:</h2>
