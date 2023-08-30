@@ -135,9 +135,6 @@ td {
     text-align: center;
 }
 
-td:hover {
-    
-}
 
 td:nth-child(even):hover {
     text-transform: uppercase;
