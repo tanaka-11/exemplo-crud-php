@@ -276,6 +276,7 @@ button:hover, button:focus {
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
+    text-shadow: #2b4581 1px 1px 1.8px;
 }
 
 .produto p {
