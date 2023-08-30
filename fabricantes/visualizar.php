@@ -21,16 +21,7 @@ $quantidade = count($listaDeFabricantes);
     <link rel="stylesheet" href="../css/exemplo-crud-php.css">
 
     <script>
-        function esconderMensagem() {
-            var mensagem = document.getElementById("mensagem");
-            if (mensagem) {
-                mensagem.style.display = "none";
-            }
-            var botao = document.getElementById("botao");
-            if (botao) {
-                botao.style.display = "none";
-            }
-        }
+
     </script>
 
 </head>
@@ -47,9 +38,9 @@ $quantidade = count($listaDeFabricantes);
 
 <?php 
 if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
-    <div id="mensagem" class="mensagem-fabricante">
-    <h3 id="mensagem" class="center">A tabela de fabricantes foi modificada com sucesso!</h3>
-    <button id="botao" onclick="esconderMensagem()">Clique aqui para voltar.</button>
+    <div id="mensagem-sucesso" class="mensagem-fabricante">
+    <h3 id="mensagem-sucesso" class="center">A tabela de fabricantes foi modificada com sucesso!</h3>
+    <button id="botao-sucesso" onclick="esconderMensagem()">Clique aqui para voltar.</button>
     </div>
 <?php } ?>
 
@@ -86,6 +77,7 @@ if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
     </div>
 
     <script src="../js/confirma-exclusao.js"></script>
+    <script src="../js/esconder-mensagem.js"></script>
 
 </body>
 </html>
