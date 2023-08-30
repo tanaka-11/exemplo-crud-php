@@ -87,16 +87,17 @@ p a {
     text-decoration: none;
     color: #000;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     transition: font-size 0.3s ease;
 }
 
 p a:hover {
-    background-color: #2e89a5;
+    background-color: #4b75cf;
     border-radius: 8px;
-    font-size: 2rem;
-    color: #cce7f8;
+    font-size: 1.8rem;
+    color: #ffffff;
 }
+
 
 
 caption {
@@ -106,7 +107,7 @@ caption {
 }
 
 table, th, td {
-    border: black solid 1px;
+    border: #080808 solid 2px;
     border-collapse: collapse;
 }
 
@@ -118,7 +119,7 @@ table {
 }
 
 th {
-    background-color: #0c262e;
+    background-color: #1f3569;
     text-shadow: #000 0 0 5px;
     color: white;
     padding: 1.05rem;
@@ -126,18 +127,13 @@ th {
 }
 
 td {
-    padding: 15px;
+    padding: 1rem;
     font-size: 1.4rem;
     text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #9AD7EA;
-}
-
-tr:nth-child(even):hover {
-    background-color: #4098B3;
-    cursor: pointer;
+    background-color: #4b75cf;
 }
 
 tr:nth-child(odd) {
@@ -145,9 +141,14 @@ tr:nth-child(odd) {
     #fff;
     
 }
-tr:nth-child(odd):hover {
-    background-color: #979aa4;
-    cursor: pointer;
+.editar, .excluir {
+    color: #0c262e;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.editar:hover, .excluir:hover{
+    color: red;
 }
 
 .center {
@@ -196,8 +197,8 @@ button {
     border: none;
     padding: 10px;
     font-size: 1.2rem;
-    background-color: #1081A3;
-    color: white;
+    background-color: #1f3569;
+    color: #e4e4e4;
     font-weight: bold;
     border-radius: 8px;
     width: 98%;
@@ -206,8 +207,8 @@ button {
 }
 button:hover, button:focus {
     cursor: pointer;
-    background-color: #36383c;
-    color: #1081A3;
+    background-color: #2550c7;
+    color: white;
 }
 
 /* Pagina produtos */
@@ -222,31 +223,26 @@ button:hover, button:focus {
 
 
 .produto {
-    color: #242526;
-    font-size: 16px;
-    font-weight: 700;
-    
     background-color: #627091;
-    padding: 1.02rem;
-    width: 48%;
+    padding: 1.2rem;
+    width: 70%;
     box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
-    
+}
+.produto p b {
+    color: #000;
 }
 
-.produto b {
+.produto p:hover {
     text-transform: uppercase;
     color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .produto p {
+    color: #fff;
+    font-weight: 700;
     font-size: 1.2rem;
     transition: font-size 0.3s ease;
-}
-
-.produto p:hover{
-    color: #fff;
-    text-shadow: #11347a 3px 3px 5px;
-    cursor: pointer;
-    font-size: 1.3rem;
 }
