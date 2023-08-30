@@ -38,7 +38,7 @@ if(isset($_POST['deletar'])){
             <input value="<?=$dadosDoFabricante['nomeFabricante']?>" type="text" name="nomeFabricante" id="nomeFabricante" disabled>
         </p>
 
-    <button type="submit" name="deletar">Deletar Fabricante</button>
+    <button type="submit" name="deletar" class="deletar">Deletar Fabricante</button>
 
     </form>
     </div>
