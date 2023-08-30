@@ -257,7 +257,6 @@ button:hover, button:focus {
     width: 450px;
     box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
-    /* text-align: center; */
 }
 
 .produto p b {
