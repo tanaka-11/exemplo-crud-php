@@ -25,7 +25,6 @@ if(isset($_POST['deletar'])){
 
 <body>
     <h1>Fabricantes | DELETE</h1>
- <hr>
 
     <h2>Tem certeza que deseja excluir o fabricante abaixo?</h2>
     <div class="center-inserir">
