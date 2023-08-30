@@ -59,7 +59,7 @@ if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
 <?php foreach($listaDeFabricantes as $listaDeFabricante) {  ?>
     
     <tr>
-    <td><?=$listaDeFabricante['id']?></td>
+    <td class="id-table"><?=$listaDeFabricante['id']?></td>
     <td><?=$listaDeFabricante['nomeFabricante']?></td>
     <td>
         <a class="editar" href="atualizar.php?id=<?=$listaDeFabricante['id']?>">Editar</a>

@@ -121,6 +121,10 @@ table {
     box-shadow: #000 1px 1px 11px;
 }
 
+.id-table:hover {
+    color: #f330f3;
+}
+
 th {
     background-color: #1f3569;
     text-shadow: #000 0 0 5px;
