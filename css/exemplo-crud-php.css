@@ -243,7 +243,7 @@ button:hover, button:focus {
 /* Pagina produtos */
 .produtos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 16px;
     width: 80%;
@@ -260,11 +260,11 @@ button:hover, button:focus {
     /* #7283a8;  #6b80ad;*/
 }
 
-.produto p b {
+.fontProduto p b {
     color: #000;
 }
 
-.produto p:hover {
+.fontProduto p:hover {
     text-transform: uppercase;
     color: #fff;
     font-size: 1.3rem;
@@ -272,21 +272,22 @@ button:hover, button:focus {
 }
 
 .editarProduto, .excluirProduto {
-    color: #002c92;
+    color: #0d3eb1;
+}
+
+.editarProduto:hover, .excluirProduto:hover {
+    color: #fff;
+    transition: font-size 0.5s ease;
+    font-size: 27px;
+    text-transform: capitalize;
 }
 
 .editarProduto:hover {
-    color: #fff;
     background-color: #1f3569;
-    transition: font-size 0.5s ease;
-    font-size: 27px;
 }
 
 .excluirProduto:hover {
-    color: #ffffff;
     background-color: #860d0d;
-    transition: font-size 0.2s ease;
-    font-size: 27px;
 }
 
 .produto p {

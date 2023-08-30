@@ -28,6 +28,8 @@ $listaDeProdutos = lerProdutos($conexao);
     <div class="produtos">
 <?php foreach($listaDeProdutos as $produto){?>
     <article class="produto">
+
+    <div class="fontProduto">
         <p><b>Nome do Produto : </b><?=$produto['nomeProduto']?></p>
 
         <p><b>Fabricante : </b><?=$produto['nomeFabricante']?></p>
@@ -37,16 +39,15 @@ $listaDeProdutos = lerProdutos($conexao);
         <p><b>Estoque : </b><?=$produto['estoque']?></p> 
 
         <p><b>Total em estoque : </b><?=formatarPreco($produto['total'])?></p>
+    </div>
 
         <br>
 
-        <!-- <div class="edicao_produto">         -->
         <p>
             <a class="editarProduto" href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
             <a class="excluirProduto" href="deletar.php?id=<?=$produto['id']?>" >Excluir</a>
         </p>
-        <!-- </div> -->
-
+        
     </article>
 <?php } ?>
     </div>   
