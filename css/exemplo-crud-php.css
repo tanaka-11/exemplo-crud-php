@@ -137,13 +137,23 @@ td {
 
 tr:nth-child(even) {
     background-color: #b7c4e4;
+    font-size: 1rem;
+    transition: font-size 0.3s ease;
 }
 
 tr:nth-child(odd) {
     background-color: 
     #fff;
-    
+    font-size: 1rem;
+    transition: font-size 0.3s ease;
 }
+
+tr:nth-child(odd):hover, tr:nth-child(even):hover {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
 .editar, .excluir {
     color: #0c262e;
     text-decoration: none;
