@@ -236,9 +236,10 @@ button:hover, button:focus {
 .produto {
     background-color: #7283a8;
     padding: 1.2rem;
-    width: 70%;
+    width: 450px;
     box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
+    /* text-align: center; */
 }
 .produto p b {
     color: #000;
