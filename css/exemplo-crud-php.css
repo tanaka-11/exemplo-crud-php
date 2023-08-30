@@ -19,6 +19,7 @@
 
 h1 {
     font-size: 2.5rem;
+    color: #294175;
 }
 
 h2 {
@@ -57,15 +58,15 @@ ul li a {
     text-decoration: none;
     color: #000;
     display: inline-block;
-    font-size: 1.9rem;
+    font-size: 2rem;
     transition: font-size 0.3s ease;
 }
 
 ul li a:hover {
-    background-color: #2e89a5;
+    background-color: #294175;
     border-radius: 8px;
     font-size: 2.2rem;
-    color: #cce7f8;
+    color: #ffffff;
 }
 
 .container-index {
@@ -133,7 +134,7 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #4b75cf;
+    background-color: #6683c2;
 }
 
 tr:nth-child(odd) {
@@ -156,10 +157,6 @@ tr:nth-child(odd) {
     justify-content: center;
     align-items: center;
     height: 100px;
-    text-align: center;
-}
-  
-.center a {
     text-align: center;
 }
 
