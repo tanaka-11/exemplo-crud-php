@@ -110,7 +110,7 @@ caption {
 }
 
 table, th, td {
-    border: #080808 solid 5px;
+    border: #080808 solid 4px;
     border-collapse: collapse;
 }
 
@@ -136,12 +136,14 @@ td {
 }
 
 
-td:nth-child(even):hover {
+td:hover {
     text-transform: uppercase;
-    transform: scale(1.02);
+    transition: font-size 0s ease;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #0044ff;
     border: 3px solid black;
+    font-weight: 600;
 }
 
 tr:nth-child(even) {
