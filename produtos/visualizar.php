@@ -40,12 +40,12 @@ $listaDeProdutos = lerProdutos($conexao);
 
         <br>
 
-        <div class="edicao_produto">        
+        <!-- <div class="edicao_produto">         -->
         <p>
-            <a href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
-            <a href="deletar.php?id=<?=$produto['id']?>">Excluir</a>
+            <a class="editarProduto" href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
+            <a class="excluirProduto" href="deletar.php?id=<?=$produto['id']?>" >Excluir</a>
         </p>
-        </div>
+        <!-- </div> -->
 
     </article>
 <?php } ?>

@@ -257,25 +257,36 @@ button:hover, button:focus {
     width: 450px;
     box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
+    /* #7283a8;  #6b80ad;*/
 }
 
 .produto p b {
     color: #000;
 }
 
-.produto p a{
-    color: #1f3569;
-}
-.produto p a:hover {
-    color: #fff;
-    background-color: #1f3569;
-}
 .produto p:hover {
     text-transform: uppercase;
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
-    text-shadow: #2b4581 1px 1px 1.8px;
+}
+
+.editarProduto, .excluirProduto {
+    color: #002c92;
+}
+
+.editarProduto:hover {
+    color: #fff;
+    background-color: #1f3569;
+    transition: font-size 0.5s ease;
+    font-size: 27px;
+}
+
+.excluirProduto:hover {
+    color: #ffffff;
+    background-color: #860d0d;
+    transition: font-size 0.2s ease;
+    font-size: 27px;
 }
 
 .produto p {
