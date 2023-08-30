@@ -241,10 +241,18 @@ button:hover, button:focus {
     border-radius: 8px;
     /* text-align: center; */
 }
+
 .produto p b {
     color: #000;
 }
 
+.produto p a{
+    color: #1f3569;
+}
+.produto p a:hover {
+    color: #fff;
+    background-color: #1f3569;
+}
 .produto p:hover {
     text-transform: uppercase;
     color: #fff;
