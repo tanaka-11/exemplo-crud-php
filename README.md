@@ -1,3 +1,3 @@
-# Exemplo de CRUD com PHP
+# Sistema de Banco de Dados em SQL e PHP
 
- Exemplo de como fazer o CRUD com SQL e PHP 
+ Sistema de CRUD em PHP e SQL criado para fins institucionais.
