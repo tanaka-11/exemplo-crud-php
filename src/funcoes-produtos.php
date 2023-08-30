@@ -24,3 +24,11 @@ function lerProdutos(PDO $conexao):array {
     return $resultado;
 }
 
+function inserirProduto(PDO $conexao, 
+string $nomeProduto, 
+int $fabricanteID, 
+float $preco, 
+int $estoque, 
+string $descricao):void {
+    $sql = "INSERT INTO produtos ";
+}
