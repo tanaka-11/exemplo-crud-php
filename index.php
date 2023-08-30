@@ -16,9 +16,9 @@
     <h1 class="titulo-index">-- Sistema de Vendas --</h1>
 
 <div class="container-index">
-    <h2>Escolha o que deseja gerenciar:</h2>
+    <h2>Escolha o que deseja gerenciar</h2>
 
-    <div class="text-center">
+    <div class="text-center index">
     <p>Operações de <b>inserção</b>, <b>leitura</b>, <b>atualização</b>, e <b>exclusão</b> de dados.</p>
     </div>
     
