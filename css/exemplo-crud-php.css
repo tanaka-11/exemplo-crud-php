@@ -135,6 +135,18 @@ td {
     text-align: center;
 }
 
+td:hover {
+    
+}
+
+td:nth-child(even):hover {
+    text-transform: uppercase;
+    transform: scale(1.02);
+    cursor: pointer;
+    color: #0044ff;
+    border: 3px solid black;
+}
+
 tr:nth-child(even) {
     background-color: #b7c4e4;
     font-size: 1rem;
@@ -148,13 +160,7 @@ tr:nth-child(odd) {
     transition: font-size 0.3s ease;
 }
 
-tr:nth-child(odd):hover, tr:nth-child(even):hover {
-    text-transform: uppercase;
-    transform: scale(1.02);
-    cursor: pointer;
-    color: #0044ff;
-    border: 3px solid black;
-}
+
 
 .editar, .excluir {
     color: #0c262e;
@@ -162,7 +168,11 @@ tr:nth-child(odd):hover, tr:nth-child(even):hover {
     padding: 0.8rem;
 }
 
-.editar:hover, .excluir:hover{
+.editar:hover {
+    color: darkorange;
+}
+
+.excluir:hover{
     color: red;
 }
 
