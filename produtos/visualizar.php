@@ -36,7 +36,7 @@ $listaDeProdutos = lerProdutos($conexao);
 
         <p><b>Estoque : </b><?=$produto['estoque']?></p> 
 
-        <p><b>Total : </b><?=formatarPreco($produto['total'])?></p>
+        <p><b>Total em estoque : </b><?=formatarPreco($produto['total'])?></p>
 
         <br>
         <hr>
