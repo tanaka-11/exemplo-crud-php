@@ -24,11 +24,26 @@ function lerProdutos(PDO $conexao):array {
     return $resultado;
 }
 
-function inserirProduto(PDO $conexao, 
-string $nomeProduto, 
-int $fabricanteID, 
-float $preco, 
-int $estoque, 
+function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, float $preco, int $estoque, 
 string $descricao):void {
-    $sql = "INSERT INTO produtos ";
+    $sql = "INSERT INTO produtos (nomeProduto, fabricante_id ,preco, estoque, descricao) 
+    VALUES (:nomeProduto, :fabricanteID, :preco, :estoque, :descricao)";
+    try {
+        $consulta = $conexao -> prepare($sql);
+
+        $consulta -> bindValue(":nomeProduto", $nomeProduto, PDO::PARAM_STR);
+
+        $consulta -> bindValue(":fabricanteID", $fabricanteID, PDO::PARAM_INT);
+        
+        // Utilizamos o parametro de string por ser mais abrangente e não existir um PARAM_FLOAT para numeros quebrados.
+        $consulta -> bindValue(":preco", $preco, PDO::PARAM_STR);
+
+        $consulta -> bindValue(":estoque", $estoque, PDO::PARAM_INT);
+
+        $consulta -> bindValue(":descricao", $descricao, PDO::PARAM_STR);
+
+        $consulta -> execute();
+    } catch (Exception $erro) {
+        die("Erro ao inserir produto: ".$erro->getMessage());
+    }
 }
