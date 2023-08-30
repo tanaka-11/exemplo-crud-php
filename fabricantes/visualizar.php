@@ -28,7 +28,6 @@ $quantidade = count($listaDeFabricantes);
 
 <body>
     <h1>Fabricantes | SELECT</h1>
-    <hr>
    
     <div class="center">
     <p><a href="inserir.php">Cadastre novo fabricante</a></p>

@@ -20,7 +20,6 @@ $listaDeProdutos = lerProdutos($conexao);
 </head>
 <body>
     <h1>Produtos | SELECT</h1>
-    <hr>
 
     <div class="center">
     <p><a href="inserir.php">Cadastre novo produto</a></p>
@@ -42,10 +41,12 @@ $listaDeProdutos = lerProdutos($conexao);
         <br>
         <hr>
 
-        <p class="edicao-produto">
+        <div class="edicao_produto">        
+        <p>
             <a href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
             <a href="deletar.php?id=<?=$produto['id']?>">Excluir</a>
         </p>
+        </div>
 
     </article>
 <?php } ?>
