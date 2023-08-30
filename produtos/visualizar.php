@@ -3,6 +3,7 @@ require_once "../src/funcoes-produtos.php";
 require_once "../src/funcoes-utilitarias.php";
 
 $listaDeProdutos = lerProdutos($conexao);
+
 ?>
 
 
@@ -42,8 +43,8 @@ $listaDeProdutos = lerProdutos($conexao);
         <hr>
 
         <p class="edicao-produto">
-            <a href="atualizar.php">Editar</a> |
-            <a href="deletar.php">Excluir</a>
+            <a href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
+            <a href="deletar.php?id=<?=$produto['id']?>">Excluir</a>
         </p>
 
     </article>

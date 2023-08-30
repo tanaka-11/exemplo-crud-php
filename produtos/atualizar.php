@@ -1,3 +1,15 @@
+<?php
+require_once "../src/funcoes-produtos.php";
+$produtoID = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+$dadosDoProduto = lerUmProduto($conexao, $produtoID);
+
+require_once "../src/funcoes-fabricantes.php";
+$listaDeFabricantes = lerFabricantes($conexao);
+
+
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -18,32 +30,39 @@
 
     <div class="center-inserir">
     <form action="#" method="post">
+
+        <input type="hidden" name="id" value="<?=$dadosDoProduto['id']?>">
+
         <p>
-            <label for="nome">Nome Produto:</label>
-            <input type="text" name="nomeProduto" id="nomeProduto" required>
+            <label for="nomeProduto">Nome Produto:</label>
+            <br>
+            <input value="<?=$dadosDoProduto['nomeProduto']?>" type="text" name="nomeProduto" id="nomeProduto" required>
         </p>  
 
         <p>
             <label for="nome">Preço:</label>
-            <input type="number" min="10" max="10000" step="0.01" name="preco" id="preco" required>
+            <input value="<?=$dadosDoProduto['preco']?>" type="number" min="10" max="10000" step="0.01" name="preco" id="preco" required>
         </p>
         
         <p>
             <label for="nome">Estoque:</label>
-            <input type="number" min="1" max="100" name="estoque" id="estoque" required>
+            <input value="<?=$dadosDoProduto['estoque']?>" type="number" min="1" max="100" name="estoque" id="estoque" required>
         </p>
 
         <p>
-            <label for="descricao">Descrição:</label> <br>
-            <textarea name="descricao" id="descricao" cols="30" rows="3"></textarea>
+            <label for="descricao">Descrição:</label> 
+            <!-- Para o textarea passamos o chamado dentro da propria tag -->
+            <textarea name="descricao" id="descricao" cols="30" rows="3"><?=$dadosDoProduto['descricao']?></textarea>
         </p>
         
         <p>
             <label for="fabricante">Fabricante:</label>
-            <br>
+            
             <select name="fabricante" id="fabricante" required>
-                <option value=""></option>
-                
+    <?php foreach($listaDeFabricantes as $fabricante) {?>
+            <option <?php if($dadosDoProduto['fabricante_id'] === $fabricante['id']) echo " selected ";?> 
+            value="<?=$fabricante['id']?>"><?=$fabricante['nomeFabricante']?></option>    
+    <?php } ?>
             </select>
         </p>  
 

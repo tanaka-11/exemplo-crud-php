@@ -24,8 +24,7 @@ function lerProdutos(PDO $conexao):array {
     return $resultado;
 }
 
-function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, float $preco, int $estoque, 
-string $descricao):void {
+function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, float $preco, int $estoque, string $descricao):void {
     $sql = "INSERT INTO produtos (nomeProduto, fabricante_id ,preco, estoque, descricao) 
     VALUES (:nomeProduto, :fabricanteID, :preco, :estoque, :descricao)";
     try {
@@ -47,3 +46,16 @@ string $descricao):void {
         die("Erro ao inserir produto: ".$erro->getMessage());
     }
 }
+
+function lerUmProduto(PDO $conexao, int $idProduto):array {
+    $sql = "SELECT * FROM produtos WHERE id = :id";
+    try {
+        $consulta = $conexao -> prepare($sql);
+        $consulta -> bindValue(":id", $idProduto, PDO::PARAM_INT);
+        $consulta -> execute();
+        $resultado = $consulta -> fetch(PDO::FETCH_ASSOC);
+    } catch (Exception $erro) {
+        die("Erro ao carregar dados do produto. Tente Novamente".$erro->getMessage());
+    }
+    return $resultado;
+} 

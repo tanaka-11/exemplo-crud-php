@@ -1,6 +1,7 @@
 <?php
 require_once "../src/funcoes-fabricantes.php";
 
+// Obtendo e sanitizando o valor vindo do parâmetro de URL
 $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
 $dadosDoFabricante = lerUmFabricante($conexao, $id);
