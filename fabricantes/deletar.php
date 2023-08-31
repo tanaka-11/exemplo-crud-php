@@ -5,6 +5,7 @@ $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
 $dadosDoFabricante = lerUmFabricante($conexao, $id);
 
+
 if(isset($_POST['deletar'])){
     deletarFabricante($conexao, $id);
     header("location:visualizar.php?status=sucesso");
