@@ -90,3 +90,16 @@ function atualizarProduto(PDO $conexao, int $id, string $nomeProduto, float $pre
         die("Erro ao atualizar dados do produto. Tente Novamente".$erro->getMessage());
     }
 }
+
+
+
+function deletarProduto(PDO $conexao, INT $id):void {
+    $sql = "DELETE FROM produtos WHERE id = :id";
+    try {
+        $consulta = $conexao -> prepare($sql);
+        $consulta -> bindValue(":id", $id, PDO::PARAM_INT);
+        $consulta -> execute();
+    } catch (Exception $erro) {
+        die("Erro ao deletar dados do produto. Tente Novamente".$erro->getMessage());
+    }
+}
