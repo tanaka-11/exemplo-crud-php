@@ -243,7 +243,7 @@ button:hover, button:focus {
 /* Pagina produtos */
 .produtos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 16px;
     width: 80%;
@@ -254,7 +254,7 @@ button:hover, button:focus {
 .produto {
     background-color: #7283a8;
     padding: 1.2rem;
-    width: 450px;
+    width: 600px;
     box-shadow: #000 1px 1px 4px;
     border-radius: 8px;
     /* #7283a8;  #6b80ad;*/
@@ -267,7 +267,7 @@ button:hover, button:focus {
 .fontProduto p:hover {
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -292,7 +292,9 @@ button:hover, button:focus {
 
 .produto p {
     color: #fff;
+    /* margin-left: 50px; */
+    padding: 5px;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: font-size 0.3s ease;
 }
