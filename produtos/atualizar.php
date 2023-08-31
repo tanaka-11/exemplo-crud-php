@@ -6,7 +6,22 @@ $dadosDoProduto = lerUmProduto($conexao, $produtoID);
 require_once "../src/funcoes-fabricantes.php";
 $listaDeFabricantes = lerFabricantes($conexao);
 
+if(isset($_POST['atualizar'])){
+    $nomeProduto = filter_input(INPUT_POST, "nomeProduto", FILTER_SANITIZE_SPECIAL_CHARS);
 
+    $fabricanteID = filter_input(INPUT_POST, "fabricante", FILTER_SANITIZE_NUMBER_INT);
+
+    $preco = filter_input(INPUT_POST, "preco", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+
+    $estoque = filter_input(INPUT_POST, "estoque", FILTER_SANITIZE_NUMBER_INT);
+
+    $descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
+
+    atualizarProduto($conexao, $produtoID, $preco, $estoque, $descricao, $fabricanteID);
+
+    header("location:visualizar.php?status=sucesso");
+
+}
 
 ?>
 

@@ -59,3 +59,7 @@ function lerUmProduto(PDO $conexao, int $idProduto):array {
     }
     return $resultado;
 } 
+
+function atualizarProduto(){
+    
+}
