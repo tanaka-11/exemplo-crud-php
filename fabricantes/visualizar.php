@@ -60,9 +60,12 @@ if(isset($_GET["status"]) && $_GET["status"] === "sucesso"){ ?>
     
     <tr>
     <td class="id-table"><?=$listaDeFabricante['id']?></td>
+
     <td><?=$listaDeFabricante['nomeFabricante']?></td>
+
     <td>
         <a class="editarFabricante" href="atualizar.php?id=<?=$listaDeFabricante['id']?>">Editar</a>
+        
         <a class="excluir excluirFabricante" href="deletar.php?id=<?=$listaDeFabricante['id']?>">Excluir</a>
     </td>
     </tr>
