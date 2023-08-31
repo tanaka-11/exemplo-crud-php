@@ -24,6 +24,8 @@ function lerProdutos(PDO $conexao):array {
     return $resultado;
 }
 
+
+
 function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, float $preco, int $estoque, string $descricao):void {
     $sql = "INSERT INTO produtos (nomeProduto, fabricante_id ,preco, estoque, descricao) 
     VALUES (:nomeProduto, :fabricanteID, :preco, :estoque, :descricao)";
@@ -47,6 +49,8 @@ function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, fl
     }
 }
 
+
+
 function lerUmProduto(PDO $conexao, int $idProduto):array {
     $sql = "SELECT * FROM produtos WHERE id = :id";
     try {
@@ -60,6 +64,8 @@ function lerUmProduto(PDO $conexao, int $idProduto):array {
     return $resultado;
 } 
 
-function atualizarProduto(){
-    
-}
+
+
+function atualizarProduto(PDO $conexao, int $produtoID, string $nomeProduto, float $preco, int $estoque, string $descricao, int $fabricanteID):void {
+
+};

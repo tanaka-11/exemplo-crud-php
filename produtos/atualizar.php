@@ -17,7 +17,7 @@ if(isset($_POST['atualizar'])){
 
     $descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
 
-    atualizarProduto($conexao, $produtoID, $preco, $estoque, $descricao, $fabricanteID);
+    atualizarProduto($conexao, $nomeProduto, $produtoID, $preco, $estoque, $descricao, $fabricanteID);
 
     header("location:visualizar.php?status=sucesso");
 
