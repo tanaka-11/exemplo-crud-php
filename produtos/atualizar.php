@@ -1,7 +1,7 @@
 <?php
 require_once "../src/funcoes-produtos.php";
-$produtoID = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
-$dadosDoProduto = lerUmProduto($conexao, $produtoID);
+$id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+$dadosDoProduto = lerUmProduto($conexao, $id);
 
 require_once "../src/funcoes-fabricantes.php";
 $listaDeFabricantes = lerFabricantes($conexao);
@@ -9,7 +9,7 @@ $listaDeFabricantes = lerFabricantes($conexao);
 if(isset($_POST['atualizar'])){
     $nomeProduto = filter_input(INPUT_POST, "nomeProduto", FILTER_SANITIZE_SPECIAL_CHARS);
 
-    $fabricanteID = filter_input(INPUT_POST, "fabricante", FILTER_SANITIZE_NUMBER_INT);
+    $idFabricante = filter_input(INPUT_POST, "fabricante", FILTER_SANITIZE_NUMBER_INT);
 
     $preco = filter_input(INPUT_POST, "preco", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
@@ -17,10 +17,10 @@ if(isset($_POST['atualizar'])){
 
     $descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
 
-    atualizarProduto($conexao, $nomeProduto, $produtoID, $preco, $estoque, $descricao, $fabricanteID);
+    atualizarProduto(
+        $conexao, $id, $nomeProduto, $preco, $estoque, $descricao, $idFabricante);
 
     header("location:visualizar.php?status=sucesso");
-
 }
 
 ?>
