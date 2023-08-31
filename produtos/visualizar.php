@@ -45,7 +45,7 @@ $listaDeProdutos = lerProdutos($conexao);
 
         <p>
             <a class="editarProduto" href="atualizar.php?id=<?=$produto['id']?>">Editar</a> |
-            <a class="excluirProduto excluir" href="deletar.php?id=<?=$produto['id']?>" >Excluir</a>
+            <a class="excluir excluirProduto" href="deletar.php?id=<?=$produto['id']?>" >Excluir</a>
         </p>
         
     </article>

@@ -144,7 +144,6 @@ td {
     text-align: center;
 }
 
-
 td:hover {
     text-transform: uppercase;
     transition: font-size 0s ease;
@@ -153,6 +152,20 @@ td:hover {
     color: #0044ff;
     border: 3px solid black;
     font-weight: 600;
+}
+
+.editarFabricante, .excluirFabricante {
+    color: #0c262e;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.editarFabricante:hover {
+    color: darkorange;
+}
+
+.excluirFabricante:hover{
+    color: red;
 }
 
 tr:nth-child(even) {
@@ -166,22 +179,6 @@ tr:nth-child(odd) {
     #fff;
     font-size: 1rem;
     transition: font-size 0.3s ease;
-}
-
-
-
-.editar, .excluir {
-    color: #0c262e;
-    text-decoration: none;
-    padding: 0.8rem;
-}
-
-.editar:hover {
-    color: darkorange;
-}
-
-.excluir:hover{
-    color: red;
 }
 
 .center {
@@ -234,6 +231,7 @@ button {
     margin: 10px auto;
 
 }
+
 button:hover, button:focus {
     cursor: pointer;
     background-color: #2550c7;
