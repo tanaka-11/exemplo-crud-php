@@ -44,6 +44,7 @@ function inserirProduto(PDO $conexao, string $nomeProduto, int $fabricanteID, fl
         $consulta -> bindValue(":descricao", $descricao, PDO::PARAM_STR);
 
         $consulta -> execute();
+        
     } catch (Exception $erro) {
         die("Erro ao inserir produto: ".$erro->getMessage());
     }
