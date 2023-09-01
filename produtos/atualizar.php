@@ -50,17 +50,21 @@ if(isset($_POST['atualizar'])){
 
         <p>
             <label for="nomeProduto">Nome Produto:</label>
+
             <br>
+            
             <input value="<?=$dadosDoProduto['nomeProduto']?>" type="text" name="nomeProduto" id="nomeProduto" required>
         </p>  
 
         <p>
             <label for="nome">Preço:</label>
+
             <input value="<?=$dadosDoProduto['preco']?>" type="number" min="10" max="10000" step="0.01" name="preco" id="preco" required>
         </p>
         
         <p>
             <label for="nome">Estoque:</label>
+
             <input value="<?=$dadosDoProduto['estoque']?>" type="number" min="1" max="100" name="estoque" id="estoque" required>
         </p>
 

@@ -20,10 +20,6 @@ $quantidade = count($listaDeFabricantes);
 
     <link rel="stylesheet" href="../css/exemplo-crud-php.css">
 
-    <script>
-
-    </script>
-
 </head>
 
 <body>

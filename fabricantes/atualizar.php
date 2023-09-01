@@ -33,12 +33,16 @@ if(isset($_POST['atualizar'])){
     <h1>Fabricantes | UPDATE-SELECT</h1>
 
     <div class="center-inserir">
+
     <form action="#" method="post">
+
         <input type="hidden" name="id" value="<?=$dadosDoFabricante['id']?>">
 
         <p>
             <label for="nomeFabricante">Nome do Fabricante:</label>
+
             <br>
+            
             <input value="<?=$dadosDoFabricante['nomeFabricante']?>" type="text" name="nomeFabricante" id="nomeFabricante" required>
         </p>
 
