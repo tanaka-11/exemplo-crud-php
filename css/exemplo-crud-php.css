@@ -158,6 +158,7 @@ td:hover {
     color: #0c262e;
     text-decoration: none;
     padding: 0.8rem;
+    font-size: 1rem;
 }
 
 .editarFabricante:hover {
@@ -198,7 +199,7 @@ div .center-inserir {
 }
 
 form {
-    width: 80%;
+    width: 46%;
     margin: 30px auto;
     padding: 1.25rem;
     background-color: #dddee0;

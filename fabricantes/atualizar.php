@@ -52,6 +52,8 @@ if(isset($_POST['atualizar'])){
     </div>
 
     <p class="center"><a href="./visualizar.php">Voltar</a></p>
+
+    <script src="../js/"></script>
 </body>
 
 </html>
