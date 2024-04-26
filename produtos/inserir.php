@@ -5,7 +5,7 @@ require_once "../src/funcoes-produtos.php";
 $listaDeFabricantes = lerFabricantes($conexao);
 
 if(isset($_POST['inserir'])){
-    // Passamos entre as aspas o valor de dentro do "name" dos input.
+    // Sanitização dos inputs
     $nomeProduto = filter_input(INPUT_POST, "nomeProduto", FILTER_SANITIZE_SPECIAL_CHARS);
 
     $fabricanteID = filter_input(INPUT_POST, "fabricante", FILTER_SANITIZE_NUMBER_INT);
